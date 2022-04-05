@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CV</title>
+        <script src="https://kit.fontawesome.com/21a5bcd785.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <nav class="navbar">
+        <ul class="navbar__links">
+            <li><a class="navbar__links-link" href=#top>About Me</a></li>
+            <li><a class="navbar__links-link" href=#education>Education</a></li>
+            <li><a class="navbar__links-link" href=#projects>Projects</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="content__title">
+            <img src="https://avatars.githubusercontent.com/u/82243351?v=4" alt="avatar" width="40" height="40">
+            <h1>Margarita Lin</h1>
+        </div>
+        <p>Working towards my Computer Science degree while attending additional practice-based courses. Looking for the oportunity to get an Internship or Trainee position in Web Development.</p>
+        <h2>Technologies Used</h2>
+        <ul class="content__technology-links">
+            <li>HTML / CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>SQL-databases</li>
+            <li>Git / GitHub / GitLab</li>
+            <li>Linux CLI</li>
+            <li>BEM methodology</li>
+        </ul>
+        <h2>Some Leetcode</h2>
+        <h3><b>Two Sum</b></h3>
+        <div class="content__leetcode-container">   
+            <pre>
+            <code class="content__leetcode-code">
+  class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+      been_there = {}
+      for i, x in enumerate(nums):
+        difference = target - x
+        if difference in been_there:
+          return [i, been_there[difference]]
+        been_there[x] = i
+            </code>
+            </pre>
+        </div>
+        <h3><b>First Unique Character</b></h3>
+        <div class="content__leetcode-container">   
+            <pre>
+            <code class="content__leetcode-code" id="education">
+  class Solution:
+    def firstUniqChar(self, s: str) -> int:
+      for letter in s:
+        if s.index(letter) == s.rindex(letter):
+          return s.index(letter)
+        return -1
+            </code>
+            </pre>
+        </div>
+        <h2>Education</h2>
+        <h3>UOPeople (2020-2024)</h3>
+        <p>Bachelor of Science in Computer Science</p>
+        <h3>Smolensk State Medical University (2010-2016)</h3>
+        <p>Doctor of Medicine</p>
+        <h2>Courses</h2>
+        <h3>Innopolis University (2021)</h3>
+        <p>Frontend Development</p>
+        <h3 id="projects">Hexlet (2020-2021)</h3>
+        <p>Python Developer</p>
+        <h2>Project</h2>
+        <h3><a href="https://github.com/mareedez/blog">React Blog</a></h3>
+        <p>Created responsive SPA using HTML/CSS/React/Redux</p>
+        <h2>Languages I Speak</h2>
+        <h3>Russian</h3>
+        <p>Level: Native</p>
+        <h3>English</h3>
+        <p><b>American English College, LA (2019)</b><br>Level: C1<p>
+    </main>
+    <footer class="footer">
+        <a href="https://rs.school/js/">
+            <img class="footer__image" src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" width="50"></a>
+        <a href="https://github.com/mareedez"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <span>2022</span>
+    </footer>
+</html>
