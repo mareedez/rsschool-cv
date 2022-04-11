@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+a, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #ACACED;
+  transition: .3s;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22232e;
+  color: white;
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 1600px;
+  background: midnightblue;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,12 +34,15 @@
 
 .navbar {
   width: 100%;
+  max-width: 1600px;
+  min-width: 678px;
+  box-sizing: border-box;
   height: 80px;
-  background-color: #007581;
+  background-color: #14145C;
   position: fixed;
   padding-left: 60px;
-  min-size: 700px;
   top: 0;
+  border-bottom: 2px solid #0E0E3E;
 }
 
 .navbar__links {
@@ -24,7 +51,7 @@
 }
 
 .navbar__links-link {
-  color: #a2f8cd;
+  color: #5858DA;
   padding: 20px;
   font-size: 20px;
   line-height: 80px;
@@ -39,39 +66,40 @@
 
 .content {
   padding: 0 80px 40px;
-  margin-top: 120px
+  margin-top: 110px;
+  width: 100%;
 }
 
 h1, h2 {
-  color: #007581;
+  color: #c9302c;
   line-height: 45px;
+}
+
+h2{
+  padding: 10px 0 5px;
 }
 
 h3 {
   line-height: 40px;
 }
 
-.h3 > a {
-  text-decoration: none;
-  color: #a2f8cd;
-}
-
 p {
   line-height: 28px;
   font-size: 18px;
   padding-bottom: 20px;
-  color: #464646;
+  color: #ACACED;
 }
 
 .content__title {
   display:flex;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  padding-top: 10px;
 }
 
 .content__title > img {
   width: 40px;
   height: 40px;
-  border: 3px solid #007581;
+  border: 3px solid #14145C;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -79,16 +107,18 @@ p {
 .content__technology-links {
   line-height: 28px;
   font-size: 18px;
-  color: #464646;
+  color: #ACACED;
   list-style-type: circle;
   padding-left: 20px;
   padding-bottom: 20px;
 }
 
 .content__leetcode-container {
-  background-color: #E4EDDC;
+  background-color: #14145C;
   padding: 0 30px;
   margin-bottom: 20px;
+  color: #5858DA;
+  border-bottom: 2px solid #0E0E3E;
 }
 
 .content__leetcode-code {
@@ -96,17 +126,19 @@ p {
 }
 
 .footer {
-  background-color: #003C43;
+  background-color: #14145C;
   height: 80px;
   padding: 30px 80px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer__image {
-  width: 40px;
+  width: 60px;
 }
 
 .fab {
-  color: #a2f8cd;
+  color: #ACACED;
   padding: 5px;
   cursor: pointer;
   transition-duration: 0.3s;
