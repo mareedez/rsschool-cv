@@ -22,10 +22,6 @@ body{
 .container{
   max-width: 1600px;
   background-color: midnightblue;
-  background-image: url("output-onlinepngtools.png");
-  background-repeat: no-repeat;
-  background-size: 1970px;
-
 }
 
 * {
