@@ -21,7 +21,11 @@ body{
 }
 .container{
   max-width: 1600px;
-  background: midnightblue;
+  background-color: midnightblue;
+  background-image: url("output-onlinepngtools.png");
+  background-repeat: no-repeat;
+  background-size: 1970px;
+
 }
 
 * {
@@ -58,6 +62,10 @@ body{
   cursor: pointer;
   text-decoration: none;
   transition-duration: 0.3s;
+}
+
+.navbar__links-link:focus, .navbar__links-link:active, .navbar__links-link:visited{
+  color: #5858DA;
 }
 
 .navbar__links-link:hover {
