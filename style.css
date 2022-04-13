@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+a, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #ACACED;
+  transition: .3s;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22232e;
+  color: white;
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 1600px;
+  background-color: midnightblue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Poppins;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 678px;
+  box-sizing: border-box;
+  height: 80px;
+  background-color: #14145C;
+  position: fixed;
+  padding-left: 60px;
+  top: 0;
+  border-bottom: 1px solid #0E0E3E;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__links-link {
+  color: #6868dd;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 80px;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.navbar__links-link:focus, .navbar__links-link:active, .navbar__links-link:visited{
+  color: #6868dd;
+}
+
+.navbar__links-link:hover {
+  color: #ffffff
+}
+
+.content {
+  padding: 0 80px 40px;
+  margin-top: 110px;
+  width: 100%;
+}
+
+h1, h2 {
+  color: #c9302c;
+  line-height: 45px;
+}
+
+h2{
+  padding: 10px 0 5px;
+}
+
+h3 {
+  line-height: 40px;
+}
+
+p {
+  line-height: 28px;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #ACACED;
+}
+
+.content__title {
+  display:flex;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.content__title > img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #14145C;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.content__technology-links {
+  line-height: 28px;
+  font-size: 18px;
+  color: #ACACED;
+  list-style-type: circle;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.content__leetcode-container {
+  background-color: #14145C;
+  line-height: 30px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  color: #6868dd;
+  border-bottom: 1px solid #0E0E3E;
+  margin-top: 5px;
+}
+
+.content__leetcode-code {
+  line-height: 20px
+}
+
+.footer {
+  background-color: #14145C;
+  height: 80px;
+  padding: 30px 80px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__image {
+  width: 60px;
+}
+
+.fab {
+  color: #ACACED;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.fab:hover {
+  color: white
+}
