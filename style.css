@@ -51,7 +51,7 @@ body{
 }
 
 .navbar__links-link {
-  color: #5858DA;
+  color: #6868dd;
   padding: 20px;
   font-size: 20px;
   line-height: 80px;
@@ -61,7 +61,7 @@ body{
 }
 
 .navbar__links-link:focus, .navbar__links-link:active, .navbar__links-link:visited{
-  color: #5858DA;
+  color: #6868dd;
 }
 
 .navbar__links-link:hover {
@@ -122,7 +122,7 @@ p {
   line-height: 30px;
   padding: 0 30px;
   margin-bottom: 20px;
-  color: #5858DA;
+  color: #6868dd;
   border-bottom: 1px solid #0E0E3E;
   margin-top: 5px;
 }
