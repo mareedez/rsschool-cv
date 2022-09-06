@@ -33,35 +33,6 @@
             <li>Linux CLI</li>
             <li>BEM methodology</li>
         </ul>
-        <h2>Some Leetcode</h2>
-        <h3><b>Two Sum</b></h3>
-        <div class="content__leetcode-container">   
-            <pre>
-            <code class="content__leetcode-code">
-  class Solution:
-    def twoSum(self, nums: List[int], target: int)-&gt;List[int]:
-      been_there = {}
-      for i, x in enumerate(nums):
-        difference = target - x
-        if difference in been_there:
-          return [i, been_there[difference]]
-        been_there[x] = i
-            </code>
-            </pre>
-        </div>
-        <h3><b>First Unique Character</b></h3>
-        <div class="content__leetcode-container">   
-            <pre>
-            <code class="content__leetcode-code" id="education">
-  class Solution:
-    def firstUniqChar(self, s: str)-&gt;int:
-      for letter in s:
-        if s.index(letter) == s.rindex(letter):
-          return s.index(letter)
-        return -1
-            </code>
-            </pre>
-        </div>
         <h2>Education</h2>
         <h3>UOPeople (2020-2024)</h3>
         <p>Bachelor of Science in Computer Science</p>
