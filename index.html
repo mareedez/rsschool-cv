@@ -39,7 +39,7 @@
             <pre>
             <code class="content__leetcode-code">
   class Solution:
-    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:
+    def twoSum(self, nums: List[int], target: int)-&gt;List[int]:
       been_there = {}
       for i, x in enumerate(nums):
         difference = target - x
@@ -54,7 +54,7 @@
             <pre>
             <code class="content__leetcode-code" id="education">
   class Solution:
-    def firstUniqChar(self, s: str) -&gt; int:
+    def firstUniqChar(self, s: str)-&gt;int:
       for letter in s:
         if s.index(letter) == s.rindex(letter):
           return s.index(letter)
